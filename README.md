@@ -9,4 +9,7 @@ https://www.youtube.com/watch?v=5wPkqdNgGt4&list=PL3B2bjwrmhfQkcBEww0gN_kcRAHntA
 // サーバー立ち上げ
 php artisan serv
 
+// テストの実行
+./vendor/bin/phpunit tests
+
 ```
