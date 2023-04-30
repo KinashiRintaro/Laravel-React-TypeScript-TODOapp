@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'is_done'
+    ];
+
+    // カラムの型を指定する場合は$castsを使用する
+    protected $casts = [
+        'is_done' => 'bool'
+    ];
 }
