@@ -12,6 +12,7 @@
 ```
 // サーバー立ち上げ
 php artisan serv
+npm run dev
 
 // テストの実行
 ./vendor/bin/phpunit tests
