@@ -38,6 +38,40 @@ class TaskTest extends TestCase
             ->assertCreated()
             ->assertJsonFragment($data);
     }
+
+    /**
+     * @test
+     */
+    public function タイトルが空の場合は登録不可(): void
+    {
+        $data = [
+            'title' => ''
+        ];
+        $response = $this->postJson('api/tasks', $data);
+
+        $response
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(
+                ['title' => 'タイトルは必ず指定してください。']
+            );
+    }
+
+    /**
+     * @test
+     */
+    public function 登録時の最大桁数テスト(): void
+    {
+        $data = [
+            'title' => str_repeat('あ', 256)
+        ];
+        $response = $this->postJson('api/tasks', $data);
+
+        $response
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(
+                ['title' => 'タイトルは、255文字以下で指定してください。']
+            );
+    }
     
     /**
      * @test

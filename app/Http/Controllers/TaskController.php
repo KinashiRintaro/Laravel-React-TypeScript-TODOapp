@@ -21,7 +21,7 @@ class TaskController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTaskRequest $request)
     {
         $task = Task::create($request->all());
 
