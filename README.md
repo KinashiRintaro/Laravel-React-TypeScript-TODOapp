@@ -6,7 +6,7 @@
 
 学んだこと等は以下の Qiita 記事にまとめる
 
-[dev-camp Laravel と React で TODO アプリを作成する](https://qiita.com/drafts/fc50dbcc2c214e59f8fd)
+[dev-camp LaravelとReactでTODOアプリを作成する](https://qiita.com/KinashiRintaro/items/fc50dbcc2c214e59f8fd)
 
 ## 開発用コマンド
 
