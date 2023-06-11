@@ -17,7 +17,8 @@ npm install
 cp .env.example .env
 php artisan key:generate
 // DBはsqliteを使用しています。
-touch database/database.sqlite 
+touch database/database.sqlite
+php artisan db:seed
 
 // サーバー立ち上げ
 php artisan serv
