@@ -7,13 +7,14 @@
     "devDependencies": {
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.1",
+        "@types/react-router-dom": "^5.3.3",
         "@vitejs/plugin-react": "^4.0.0",
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.7.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "vite": "^4.0.0",
-        "@types/react-router-dom": "^5.3.3",
-        "react-router-dom": "^6.10.0"
+        "react-query": "^3.39.3",
+        "react-router-dom": "^6.10.0",
+        "vite": "^4.0.0"
     }
 }
